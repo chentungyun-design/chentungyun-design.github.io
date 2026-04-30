@@ -94,9 +94,16 @@ body.light #export-row{border-color:rgba(0,0,0,0.1);}
       <button class="btn" style="margin-top:8px;" id="expbtn">匯出 PNG</button>
     </div>
   </div>
+  <div style="margin-top:28px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.07);text-align:center;line-height:1.9;">
+    <div style="font-size:13px;font-weight:500;letter-spacing:.06em;opacity:.7;">MOOD TRACE · 心情軌跡</div>
+    <div style="font-size:11px;opacity:.38;margin-top:2px;">© 2026 Chen Tung-Yun · Mood Trace. All rights reserved.</div>
+    <div style="font-size:11px;opacity:.38;">本作品之概念、設計與互動形式，版權所有，未經授權不得複製或轉載。</div>
+    <div style="font-size:10px;opacity:.25;margin-top:6px;letter-spacing:.04em;">Original concept &amp; design by chentungyun · Created with ♥</div>
+  </div>
 </div>
 
 <script>
+document.getElementById('cr-year').textContent=new Date().getFullYear();
 const mc=document.getElementById('mc'),pc=document.getElementById('pc');
 const mCtx=mc.getContext('2d'),pCtx=pc.getContext('2d');
 const W=760,H=480,G=38;
